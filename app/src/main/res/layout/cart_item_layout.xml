@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:background="@color/colorAccent"
+    android:elevation="3dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/productt_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mobile" />
+
+    <TextView
+        android:id="@+id/product_titletv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Redmi 5A (Black)"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/productt_image"
+        app:layout_constraintTop_toTopOf="@+id/productt_image" />
+
+    <ImageView
+        android:id="@+id/free_coupan_icon"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:tint="#8000ff"
+        app:layout_constraintStart_toStartOf="@+id/product_titletv"
+        app:layout_constraintTop_toBottomOf="@+id/product_titletv"
+        app:srcCompat="@drawable/tag" />
+
+    <TextView
+        android:id="@+id/tv_free_coupan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Free Two Coupan"
+        android:textColor="#8000ff"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/free_coupan_icon"
+        app:layout_constraintTop_toBottomOf="@+id/product_titletv" />
+
+    <TextView
+        android:id="@+id/product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Rs.49999/-"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/cutted_price"
+        app:layout_constraintTop_toBottomOf="@+id/tv_free_coupan" />
+
+    <TextView
+        android:id="@+id/cutted_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Rs3999"
+        android:textColor="#99515050"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/product_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/product_price" />
+
+    <View
+        android:id="@+id/price_cut_divider"
+        android:layout_width="0dp"
+        android:layout_height="1.5dp"
+        android:background="#99515050"
+        app:layout_constraintBottom_toBottomOf="@+id/cutted_price"
+        app:layout_constraintEnd_toEndOf="@+id/cutted_price"
+        app:layout_constraintStart_toStartOf="@+id/cutted_price"
+        app:layout_constraintTop_toTopOf="@+id/cutted_price" />
+
+    <TextView
+        android:id="@+id/offers_applied"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="offers applied"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coupan_applied" />
+
+    <TextView
+        android:id="@+id/coupan_applied"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="coupan_applied"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/product_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border_background"
+        android:backgroundTint="@android:color/black"
+        android:drawableEnd="@drawable/dropdown_arrow"
+        android:drawablePadding="8dp"
+        android:drawableTint="@android:color/black"
+        android:padding="3dp"
+        android:text="Qty:1"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toEndOf="@+id/productt_image"
+        app:layout_constraintTop_toBottomOf="@+id/tv_free_coupan" />
+
+    <LinearLayout
+        android:id="@+id/coupan_reedemption_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@color/coupanred"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coupan_applied">
+
+        <TextView
+            android:id="@+id/tv_coupan_reedemption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Apply your coupan here"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/coupan_reedemption_button"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/border_background"
+            android:text="Reedem"
+            android:textColor="@color/colorAccent"
+            android:textSize="12sp">
+
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/remove_item_btn"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productt_image">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableStart="@drawable/delete"
+            android:drawablePadding="4dp"
+            android:drawableTint="#716969"
+            android:gravity="center"
+            android:text="Remove Item">
+
+        </TextView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/cod_indicator"
+        android:layout_width="70dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_free_coupan"
+        app:layout_constraintStart_toEndOf="@+id/tv_free_coupan"
+        app:layout_constraintTop_toTopOf="@+id/tv_free_coupan"
+        app:srcCompat="@drawable/cod" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

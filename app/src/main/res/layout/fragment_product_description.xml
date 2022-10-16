@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductDescriptionFragment">
+
+    <TextView
+        android:id="@+id/tv_product_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textColor="@android:color/black"
+        android:text="
+Love clicking selfies? Well, then bring home this smartphone and ensure that you capture jaw-dropping selfies every time. Featuring an AI Selfie camera, AI Beauty mode and Portrait mode, this smartphone warrants that your selfies are on fleek all the time. It even has a 12nm Helio P22 2.0-GHz octa-core processor and 4 GB of RAM so that you can use it to perform everyday smartphone tasks without any lag." />
+</FrameLayout>

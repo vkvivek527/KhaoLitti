@@ -1,0 +1,114 @@
+{
+  "project_info": {
+    "project_number": "326659436720",
+    "firebase_url": "https://kldata-d1581.firebaseio.com",
+    "project_id": "kldata-d1581",
+    "storage_bucket": "kldata-d1581.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:326659436720:android:419c23402aad7487bb0b75",
+        "android_client_info": {
+          "package_name": "com.example.adminapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "326659436720-fj8bf9c452l69mkt9edh76jl3qbkn1t9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5ubs2hiIeWdyvnvMYMmttMJsONXhfBCo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "326659436720-fj8bf9c452l69mkt9edh76jl3qbkn1t9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:326659436720:android:b71068b0e17ca275bb0b75",
+        "android_client_info": {
+          "package_name": "com.khaolitti.khao"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "326659436720-7rmgjdjs9l3rn85tl0ng1a3n26ub6g8s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.khaolitti.khao",
+            "certificate_hash": "93c18ef5fbdcda5422c5ff11c6e66d37b4321646"
+          }
+        },
+        {
+          "client_id": "326659436720-fj8bf9c452l69mkt9edh76jl3qbkn1t9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5ubs2hiIeWdyvnvMYMmttMJsONXhfBCo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "326659436720-fj8bf9c452l69mkt9edh76jl3qbkn1t9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:326659436720:android:9f2221294087fdfbbb0b75",
+        "android_client_info": {
+          "package_name": "com.khaolitti.khaolitti"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "326659436720-fk3r2s73or9hfsnh7ngeue9ko3o4sptt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.khaolitti.khaolitti",
+            "certificate_hash": "93c18ef5fbdcda5422c5ff11c6e66d37b4321646"
+          }
+        },
+        {
+          "client_id": "326659436720-fj8bf9c452l69mkt9edh76jl3qbkn1t9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5ubs2hiIeWdyvnvMYMmttMJsONXhfBCo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "326659436720-fj8bf9c452l69mkt9edh76jl3qbkn1t9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

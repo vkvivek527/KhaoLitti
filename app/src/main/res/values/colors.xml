@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#C20808</color>
+    <color name="colorPrimaryDark">#C20808</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="deleverycancel">#F70B0B</color>
+    <color name="delevered">#5DC911</color>
+    <color name="deleveryOnway">#FAB834</color>
+    <color name="red">#FA5234</color>
+    <color name="productdescriptioncolor">#20B2AA</color>
+    <color name="recyclerviewbackground">#E6E6E6</color>
+    <color name="coupantext"> #104E41</color>
+    <color name="coupanred"> #FF3030</color>
+    <color name="green">#5DC911</color>
+
+</resources>

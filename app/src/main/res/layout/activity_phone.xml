@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.khaolitti.khao.PhoneActivity">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logored"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"/>
+    <TextView
+        android:layout_below="@id/logo"
+        android:id="@+id/textView2Phone"
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="#858080"
+        android:visibility="visible"
+        android:text="Please Enter Your Mobile Number \n       We Will Send You an OTP"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/Phonenoedittext"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:visibility="visible"
+        android:layout_below="@+id/textView2Phone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:ems="10"
+        android:textAlignment="center"
+        android:background="@drawable/edit_text"
+        android:padding="10dp"
+        android:textColor="#FF858080"
+        android:inputType="phone"
+        android:hint="Enter Your Mobile Number"/>
+
+    <Button
+        android:id="@+id/PhoneVerify"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/Phonenoedittext"
+        android:layout_alignEnd="@+id/Phonenoedittext"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="56dp"
+        android:layout_toEndOf="@+id/imageView2Phone"
+        android:background="@drawable/button_round"
+        android:text="Send OTP"
+        android:textColor="@android:color/white" />
+
+
+    <ImageView
+        android:id="@+id/imageView2Phone"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/Phonenoedittext"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="46dp"
+        android:layout_toStartOf="@+id/textView2Phone"
+        android:layout_toLeftOf="@+id/textView2Phone"
+        app:srcCompat="@drawable/ic_phone_iphone_black_24dp" />
+
+    <TextView
+                android:id="@+id/textViewVerified"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="#FF858080"
+                android:textAlignment="center"
+                android:layout_below="@id/logo"
+                android:visibility="gone"
+                android:text="Verify Your Number\n We have Sent OTP on Your Number"
+                android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:id="@+id/showmobilenumber"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewVerified"
+        android:layout_alignStart="@+id/textViewVerified"
+        android:layout_alignEnd="@+id/textViewVerified"
+        android:layout_marginStart="4dp"
+        android:text="+918757319906"
+        android:visibility="gone"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:layout_marginEnd="4dp">
+
+    </TextView>
+
+            <EditText
+
+                android:id="@+id/OTPeditText"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:visibility="gone"
+                android:layout_below="@+id/textViewVerified"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="66dp"
+                android:ems="10"
+                android:background="@drawable/edit_text"
+                android:padding="10dp"
+                android:inputType="phone"
+                android:textAlignment="center"
+                android:hint="Enter OTP"/>
+
+    <Button
+        android:id="@+id/OTPVERIFY"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/OTPeditText"
+        android:layout_alignStart="@+id/OTPeditText"
+        android:layout_alignEnd="@+id/OTPeditText"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginStart="55dp"
+        android:background="@drawable/button_round"
+        android:text="Done"
+        android:textColor="@android:color/white"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/resend_otp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/OTPeditText"
+        android:layout_alignEnd="@+id/OTPeditText"
+        android:layout_marginEnd="22dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#227121"
+        android:visibility="gone"
+        android:text="Resend OTP" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/OTPeditText"
+        android:layout_alignStart="@+id/Phonenoedittext"
+        android:layout_marginStart="55dp"
+        android:textColor="#227121"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        android:text="TextView" />
+
+
+</RelativeLayout>
